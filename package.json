@@ -1,0 +1,8 @@
+{
+  "name": "ycloud-template",
+  "version": "1.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/yonyouyc/ycloud-template.git",
+  "author": "windknow <songhlc@yonyou.com>",
+  "license": "MIT"
+}

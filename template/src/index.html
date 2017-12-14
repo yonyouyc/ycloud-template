@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ycloud-admin</title>
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body{
+          background-color: #efeff1;
+          font-family: tahoma,arial,"Hiragino Sans GB", "Microsoft YaHei", "\5b8b\4f53" !important;
+        }
+        label{
+          font-weight: normal;
+        }
+        #bodycontent{
+          margin-left:74px
+        }
+        .y-input::-webkit-input-placeholder { /* WebKit browsers */
+           color: #999;
+         }
+        .y-input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+           color:#999;
+         }
+        .y-input::-moz-placeholder { /* Mozilla Firefox 19+ */
+           color:#999;
+         }
+        .y-input:-ms-input-placeholder { /* Internet Explorer 10+ */
+           color:#999;
+         }
+        .y-input:focus{
+           outline: 0
+         }
+        .side-menu{
+          list-style: none;
+          position: fixed;
+          background: #333 none repeat scroll 0 0;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+          color: rgba(163, 175, 183, 0.9);
+          height: calc(100% - 60px);
+          top: 0;
+          -ms-transition: transform 0.3s ease 0s;
+          -webkit-transition: -webkit-transform 0.3s ease 0s;
+          width: 74px;
+          z-index: 1000;
+          height: 100% !important;
+          margin: 0;
+          padding: 50px 0 0 0;
+        }
+        .side-menu li{
+          position: relative;
+          text-align: center;
+          padding: 8px 0;
+        }
+        .side-menu li:hover{
+          background: #4f4f4f;
+        }
+        .side-menu li i{
+          font-size: 20px;
+          color: #bfbfbf;
+          vertical-align: middle;
+          display: inline-block;
+          width: 100%;
+        }
+        .side-menu a{
+          display: inline-block;
+        }
+        .side-menu li span{
+          display: inline-block;
+          color: #bfbfbf;
+          text-underline: none;
+          font-size: 13px;
+          position: relative;
+          width: 52px;
+          font-weight: 100;
+          line-height: 15px;
+          margin-top: 5px;
+          word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+<ul class="side-menu">
+  <li>
+    <a href="/yuncai/mobile/login.html?r=/">
+      <i class="fa fa-home"></i>
+      <span>登录链接</span></a>
+  </li>
+  <li>
+    <a href="#buyofferlist">
+      <i class="fa fa-home"></i>
+      <span>寻源管理</span></a>
+  </li>
+  <li>
+    <a href="#supply">
+      <i class="fa fa-home"></i>
+      <span>供应商选择</span></a>
+  </li>
+  <li>
+    <a href="#form">
+      <i class="fa fa-home"></i>
+      <span>表单</span></a>
+  </li>
+  <li>
+    <a href="#grid">
+      <i class="fa fa-home"></i>
+      <span>表格</span></a>
+  </li>
+  <li>
+    <a href="#select">
+      <i class="fa fa-home"></i>
+      <span>下拉参照</span></a>
+  </li>
+  <li>
+    <a href="#layout">
+      <i class="fa fa-home"></i>
+      <span>布局</span></a>
+  </li>
+  <li>
+    <a href="#buyofferlist">
+      <i class="fa fa-home"></i>
+      <span>容器</span></a>
+  </li>
+  <li>
+    <a href="#buyofferlist">
+      <i class="fa fa-home"></i>
+      <span>树</span></a>
+  </li>
+  <li>
+    <a href="#buyofferlist">
+      <i class="fa fa-home"></i>
+      <span>复杂页面</span></a>
+  </li>
+</ul>
+
+<div id="bodycontent">
+<div id="app">
+</div>
+</div>
+<script src="https://cdn.bootcss.com/knockout/3.4.2/knockout-min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/Director/1.2.8/director.min.js"></script>
+<script src="https://yc.yonyoucloud.com/cpu-cdn/js/uui/iuap-design-3.1.23/js/u.js"></script>
+</body>
+</html>
