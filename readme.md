@@ -10,3 +10,10 @@ see [如何安装vue-cli](https://github.com/vuejs/vue-cli)
 vue init yonyouyc/ycloud-template <project-name>
 
 project-name 请输入自己的project-name
+
+附：
+[ycloud开发文档](https://yonyouyc.github.io/ycloud-document/dist/#box)
+[ycloud-admin示例页面](https://yonyouyc.github.io/ycloud-admin/dist/index.html#buyofferlist)
+[云采ue规范](https://yonyouyc.github.io/yuncai-ue/index.html)
+
+

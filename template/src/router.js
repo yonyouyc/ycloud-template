@@ -1,12 +1,10 @@
 import ko from 'knockout'
 import $ from 'jquery'
-const buyofferlist = resolve => require(['./pages/buyoffer/list'], resolve)
-const supplylist = resolve => require(['./pages/supplylist/index'], resolve)
-const index = resolve => require(['./pages/index/index'], resolve)
-const form = resolve => require(['./pages/form/index'], resolve)
-const grid = resolve => require(['./pages/grid/index'], resolve)
-const select = resolve => require(['./pages/select/index'], resolve)
-const layout = resolve => require(['./pages/layout/index'], resolve)
+import views from './configs/views'
+var routesList = {}
+views.forEach((item) => {
+  routesList[item.path ? item.path : ('/' + item.name)] = resolve => require(['./pages/' + item.name], resolve)
+})
 
 function initPage (page) {
   page(function (item) {
@@ -15,15 +13,7 @@ function initPage (page) {
     item.default.init()
   })
 }
-var routesList = {
-  '/buyofferlist': buyofferlist,
-  '/': index,
-  '/form': form,
-  '/grid': grid,
-  '/select': select,
-  '/layout': layout,
-  '/supply': supplylist
-}
+
 var routes = {}
 Object.keys(routesList).forEach(item => {
   routes[item] = function () {
@@ -32,3 +22,8 @@ Object.keys(routesList).forEach(item => {
 })
 var route = window.Router(routes)
 route.init()
+// 默认/ 跳转到首页
+if (window.location.hash) {
+} else {
+  window.location.href = '#/index'
+}
