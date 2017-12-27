@@ -8,7 +8,7 @@ function resolve (dir) {
 }
 module.exports = {
   entry: [
-    './src/index.js'
+    './src/app.js'
   ],
   devtool: 'inline-source-map',
   plugins: [
