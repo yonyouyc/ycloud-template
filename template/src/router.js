@@ -10,7 +10,8 @@ function initPage (page) {
   page(function (item) {
     ko.cleanNode(document.getElementById('bodycontent'))
     $('#app').html(item.default.template)
-    item.default.init()
+    /* eslint-disable no-new */
+    new item.default.View()
   })
 }
 

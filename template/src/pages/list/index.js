@@ -1,10 +1,11 @@
 import ko from 'knockout'
 import template from './index.html'
-function init () {
-  var viewmodel = {
-    title: ko.observable('列表页面'),
-    rows: ko.observableArray(),
-    columns: [
+import BaseView from '@/base/baseview'
+class View extends BaseView {
+  data () {
+    this.title = ko.observable('列表页面')
+    this.rows = ko.observableArray()
+    this.columns = [
       {
         title: '',
         type: 'checkbox'
@@ -20,19 +21,27 @@ function init () {
       }
     ]
   }
-  ko.applyBindings(viewmodel, document.getElementById('app'))
-  // 模拟异步请求
-  setTimeout(function () {
-    viewmodel.rows([
+  computed () {
+    this.titlecomputed = ko.computed(function () {
+      return this.title() + ' computed'
+    }.bind(this))
+  }
+  watch () {
+    this.rows.subscribe(function (val) {
+      console.log(val)
+    })
+  }
+  mounted () {
+    this.rows([
       {
         title: '这是一个标题',
         content: '内容很长很长的内容，内容很长很长的内容，内容很长很长的内容，内容很长很长的内容'
       }
     ])
-  })
+  }
 }
 
 export default {
   template,
-  init
+  View
 }

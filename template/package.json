@@ -13,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:umd",
     "build:umd": "webpack --progress --colors --config config/webpack.prod.config.js",
-    "dev": "webpack-dev-server --open --config config/webpack.dev.config.js"
+    "dev": "webpack-dev-server --open --port 8090 --config config/webpack.dev.config.js"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.3",
@@ -59,7 +59,8 @@
     "director": "^1.2.8",
     "knockout": "^3.4.2",
     "lodash": "^4.17.4",
-    "ycloud": "^1.2.36"
+    "ycloud": "^1.2.36",
+    "ycloud-lifecycle": "^1.0.1"
   },
   "engines": {
     "node": ">= 4.0.0",
