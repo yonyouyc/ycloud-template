@@ -60,7 +60,7 @@
     "knockout": "^3.4.2",
     "lodash": "^4.17.4",
     "ycloud": "^1.2.36",
-    "ycloud-lifecycle": "^1.0.1"
+    "ycloud-lifecycle": "^1.0.2"
   },
   "engines": {
     "node": ">= 4.0.0",
