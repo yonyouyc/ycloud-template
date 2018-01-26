@@ -1,4 +1,16 @@
 <y-box>
+  <y-boxcontent params="title: '通用参照'">
+    <y-form params="labelWidth:'80px'">
+      <div class="row">
+        <div class="col-md-3">
+         <y-formitem params="label:'供应商'">
+           <y-refer-supply params="value: $root.personSelected, onOk: $root.handleOk">
+           </y-refer-supply>
+         </y-formitem>
+        </div>
+      </div>
+    </y-form>
+  </y-boxcontent>
   <y-boxcontent params="title: 'it,s a list page'">
       <div data-bind="text: $root.title"></div>
       <div data-bind="text: $root.titlecomputed"></div>

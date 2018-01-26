@@ -60,9 +60,9 @@ config = merge(config, {
       template: './src/index.html',
       title: 'ucloud-ko-select'
     }),
-    // new webpack.optimize.CommonsChunkPlugin({
-    //   name: 'runtime'
-    // }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: ['vendor'],
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new DashboardPlugin(dashboard.setData),
     new webpack.DefinePlugin({

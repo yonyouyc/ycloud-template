@@ -7,9 +7,10 @@ function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 module.exports = {
-  entry: [
-    './src/app.js'
-  ],
+  entry: {
+    app: './src/app.js',
+    vendor: ['ycloud', 'ycloud-refer', 'lodash'],
+  },
   devtool: 'inline-source-map',
   plugins: [
     new ExtractTextPlugin({
@@ -79,6 +80,6 @@ module.exports = {
   },
   output: {
     path: distpath,
-    filename: 'libs.js'
+    filename: 'libs.[name].[hash].js'
   },
 };

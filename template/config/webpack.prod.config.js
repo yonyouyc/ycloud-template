@@ -58,6 +58,9 @@ config = merge(config, {
         safe: true
       }
     }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: ['vendor'],
+    }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/index.html'

@@ -5,6 +5,10 @@ class View extends BaseView {
   data () {
     this.title = ko.observable('列表页面')
     this.rows = ko.observableArray()
+    this.personSelected = ko.observable()
+    this.handleOk = (selectedItem) => {
+      alert(console.log(JSON.stringify(selectedItem)))
+    }
     this.columns = [
       {
         title: '',
@@ -13,11 +17,11 @@ class View extends BaseView {
       {
         title: '标题',
         field: 'title',
-        width: '200'
+        width: '50%'
       }, {
         title: '内容',
         field: 'content',
-        width: '400'
+        width: '40%'
       }
     ]
   }
