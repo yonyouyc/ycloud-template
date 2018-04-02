@@ -7,7 +7,7 @@ class View extends BaseView {
     this.rows = ko.observableArray()
     this.personSelected = ko.observable()
     this.handleOk = (selectedItem) => {
-      alert(console.log(JSON.stringify(selectedItem)))
+      alert(JSON.stringify(selectedItem))
     }
     this.columns = [
       {
@@ -36,12 +36,14 @@ class View extends BaseView {
     })
   }
   mounted () {
-    this.rows([
-      {
-        title: '这是一个标题',
-        content: '内容很长很长的内容，内容很长很长的内容，内容很长很长的内容，内容很长很长的内容'
-      }
-    ])
+    setTimeout(() => {
+      this.rows([
+        {
+          title: '这是一个标题',
+          content: '内容很长很长的内容，内容很长很长的内容，内容很长很长的内容，内容很长很长的内容'
+        }
+      ])
+    })
   }
 }
 

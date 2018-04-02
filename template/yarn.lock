@@ -4090,6 +4090,10 @@ pluralize@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-1.2.1.tgz#d1a21483fd22bb41e58a12fa3421823140897c45"
 
+popper.js@^1.0.2, popper.js@^1.14.1:
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.14.1.tgz#b8815e5cda6f62fc2042e47618649f75866e6753"
+
 portfinder@^1.0.9:
   version "1.0.13"
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.13.tgz#bb32ecd87c27104ae6ee44b5a3ccbf0ebb1aede9"
@@ -5311,6 +5315,12 @@ to-fast-properties@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-1.0.3.tgz#b83571fa4d8c25b82e231b06e3a3055de4ca1a47"
 
+tooltip.js@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/tooltip.js/-/tooltip.js-1.2.0.tgz#8b16482f04397f4f9d7387843dccf186890c8860"
+  dependencies:
+    popper.js "^1.0.2"
+
 toposort@^1.0.0:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/toposort/-/toposort-1.0.6.tgz#c31748e55d210effc00fdcdc7d6e68d7d7bb9cec"
@@ -5896,21 +5906,23 @@ ycloud-lifecycle@^1.0.2:
   dependencies:
     eventemitter2 "^5.0.0"
 
-ycloud-refer@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/ycloud-refer/-/ycloud-refer-1.1.4.tgz#e53495803c13cb05a02c9277e3df65aa503b6b3d"
+ycloud-refer@^1.1.37:
+  version "1.1.37"
+  resolved "https://registry.yarnpkg.com/ycloud-refer/-/ycloud-refer-1.1.37.tgz#6df29425a285b02c42afc83c351001cacd65a1f6"
   dependencies:
     knockout "^3.4.2"
     lodash "^4.17.4"
 
-ycloud@^1.4.8:
-  version "1.4.8"
-  resolved "https://registry.yarnpkg.com/ycloud/-/ycloud-1.4.8.tgz#da0122847f81d3d23c3f2a0c8384d18b3668d5fe"
+ycloud@^1.5.49:
+  version "1.5.49"
+  resolved "https://registry.yarnpkg.com/ycloud/-/ycloud-1.5.49.tgz#f96288c5f9d726c77ee1c34c183d8d4a514ab4c8"
   dependencies:
     async-validator "^1.8.1"
     knockout "3.4.2"
     ko-bindinghandler "^1.1.3"
     lodash "^4.17.4"
+    popper.js "^1.14.1"
+    tooltip.js "^1.2.0"
 
 yeast@0.1.2:
   version "0.1.2"
