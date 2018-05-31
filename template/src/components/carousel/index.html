@@ -1,0 +1,13 @@
+<div id="carousel-generic">
+  <ol class="carousel-indicators" data-bind="forEach: bannerList">
+    <li data-bind="click:function () {return $parent.handleClick($index)}"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="carousel-bg carousel-bg1"></div>
+    </div>
+    <div class="item">
+      <div class="carousel-bg carousel-bg2"></div>
+    </div>
+  </div>
+</div>

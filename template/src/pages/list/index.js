@@ -36,6 +36,7 @@ class View extends BaseView {
     })
   }
   mounted () {
+    var data = this.loadData
     setTimeout(() => {
       this.rows([
         {
@@ -44,6 +45,8 @@ class View extends BaseView {
         }
       ])
     })
+  }
+  methods () {
   }
 }
 

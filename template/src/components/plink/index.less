@@ -1,0 +1,31 @@
+@import "../../base/basiccolor";
+/*导航栏*/
+/*row-red-nav*/
+.row-red-nav {
+  height: 40px;
+  /* background-color: #5AAEF2; */
+  background-color: @primary-color;
+}
+#red-nav-navbar > li {
+  width: 14%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+#red-nav-navbar > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#red-nav-navbar > li:hover {
+  background-color: @primary-active;
+  cursor: pointer;
+}
+.row-red-nav-a, .row-red-nav-a:hover, .row-red-nav-a:visited {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.li-active {
+  background-color: @primary-active;
+}
