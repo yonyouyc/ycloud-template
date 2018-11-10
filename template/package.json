@@ -59,9 +59,9 @@
     "director": "^1.2.8",
     "knockout": "^3.4.2",
     "lodash": "^4.17.4",
-    "ycloud": "^1.5.49",
-    "ycloud-lifecycle": "^1.0.2",
-    "ycloud-refer": "^1.1.37"
+    "ycloud": "^2.7.12",
+    "ycloud-lifecycle": "^1.0.3",
+    "ycloud-refer": "^1.2.26"
   },
   "engines": {
     "node": ">= 4.0.0",
